@@ -1,0 +1,16 @@
+cc_library_static {
+    name: "multihal-kiwi",
+    vendor: true,
+    srcs: [
+        "multihal.cpp",
+        "SensorEventQueue.cpp"
+    ],
+    shared_libs: [
+        "libcutils",
+        "libdl",
+        "liblog",
+        "libutils",
+        "libhardware"
+    ],
+    export_include_dirs: ["."],
+}
